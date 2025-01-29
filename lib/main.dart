@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:new_firebase/View/login_screen.dart';
+
+import 'package:new_firebase/View/signup_screen.dart';
 import 'package:new_firebase/ViewModel/auth_viewmodel.dart';
 import 'package:new_firebase/ViewModel/notes_viewmodel.dart';
 import 'package:provider/provider.dart';
@@ -25,8 +26,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Note Taking App',
         theme: ThemeData(primarySwatch: Colors.blue),
-        //home: const HomeScreen(),
-        home: const LoginScreen(),
+        home: const SignupScreen(),
       ),
     );
   }
